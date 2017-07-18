@@ -1,0 +1,48 @@
+.marketing-site-content-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+
+  .button.hollow {
+    text-transform: uppercase;
+    font-weight:600;
+    border: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .marketing-site-content-section-img {
+    align-self: center;
+    flex: 1 0 100%;
+
+    img {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 40em) {
+      flex: 1 0 50%;
+    }
+  }
+
+  .marketing-site-content-section-block {
+    padding: 1rem;
+    flex: 1 0 100%;
+    align-self: stretch;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h6 {
+      color: $alt-purple;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    @media screen and (min-width: 40em) {
+      flex: 1 0 50%;
+      padding: 2rem;
+    }
+  }
+}
